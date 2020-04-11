@@ -47,7 +47,7 @@
     <Compile Include="SpellCaster.cs" />
     <Compile Include="Necromancer.cs" />
     <Compile Include="Priest.cs" />
-    <Compile Include="SoldierFactory.cs" />
+    <Compile Include="ArmyFactory.cs" />
     <Compile Include="Sorcerer.cs" />
     <Compile Include="Tank.cs" />
     <Compile Include="Warrior.cs" />
