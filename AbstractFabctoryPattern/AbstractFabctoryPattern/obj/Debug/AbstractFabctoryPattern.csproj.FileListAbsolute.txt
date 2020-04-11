@@ -1,0 +1,7 @@
+C:\Users\Vassara\source\repos\AbstractFabctoryPattern\AbstractFabctoryPattern\obj\Debug\AbstractFabctoryPattern.csprojAssemblyReference.cache
+C:\Users\Vassara\source\repos\AbstractFabctoryPattern\AbstractFabctoryPattern\obj\Debug\AbstractFabctoryPattern.csproj.CoreCompileInputs.cache
+C:\Users\Vassara\source\repos\AbstractFabctoryPattern\AbstractFabctoryPattern\bin\Debug\AbstractFabctoryPattern.exe.config
+C:\Users\Vassara\source\repos\AbstractFabctoryPattern\AbstractFabctoryPattern\bin\Debug\AbstractFabctoryPattern.exe
+C:\Users\Vassara\source\repos\AbstractFabctoryPattern\AbstractFabctoryPattern\bin\Debug\AbstractFabctoryPattern.pdb
+C:\Users\Vassara\source\repos\AbstractFabctoryPattern\AbstractFabctoryPattern\obj\Debug\AbstractFabctoryPattern.exe
+C:\Users\Vassara\source\repos\AbstractFabctoryPattern\AbstractFabctoryPattern\obj\Debug\AbstractFabctoryPattern.pdb
