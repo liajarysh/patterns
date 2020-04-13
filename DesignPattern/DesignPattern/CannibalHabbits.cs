@@ -8,12 +8,13 @@ namespace DesignPattern
 {
     public abstract class CannibalHabbits
     {
-        public void Habbits()
+       public void Habbits()
         {
             catchVictim();
-            Cook();
-            Eat();
-            Sleep();
+            chat();
+            cook();
+            eat();
+            sleep();
         }
 
         public void catchVictim()
@@ -21,17 +22,19 @@ namespace DesignPattern
             Console.WriteLine("Поймал жертву");
         }
 
-        public void Eat()
+        public void eat()
         {
             Console.WriteLine("Поел");
         }
 
-        public void Sleep()
+        public void sleep()
         {
             Console.WriteLine("Отошел ко сну");
         }
 
-        public abstract void Cook();
+        public abstract void chat();
+
+        public abstract void cook();
 
     }
 }
