@@ -9,19 +9,24 @@ namespace DesignPattern
     class TalkativeCannibal: CannibalHabbits
     {
         
-        public override void Cook()
+         public override void chat()
         {
             Console.WriteLine("Беседует с потенциальной едой");
 
-            if (IsWeekend())
+        }
+        public override void cook()
+        {
+
+            if (isWeekend())
             {
-                Console.WriteLine("Ест");
+                Console.WriteLine("Сварил жертву");
             }
             else
             {
-                Console.WriteLine("Дарит");
+                Console.WriteLine("Пожарил жертву");
             }
         }
+
 
 
         bool IsWeekend()
