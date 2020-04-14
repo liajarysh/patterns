@@ -32,7 +32,7 @@ namespace DesignPattern
             Console.WriteLine("Отошел ко сну");
         }
 
-        public abstract void chat();
+        public virtual void chat() { }
 
         public abstract void cook();
 
