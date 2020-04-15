@@ -8,19 +8,30 @@ namespace AdapterPattern
 {
     class Solution
     {
-        public static Dictionary<String, String> countries = new Dictionary<string, string>();
+       public static Dictionary<String, String> countries = new Dictionary<string, string>();
 
         public static void Main()
         {
             countries.Add("UA", "Ukraine");
             countries.Add("RU", "Russia");
             countries.Add("CA", "Canada");
-            
+            IncomeDataAdapter adaper = new IncomeDataAdapter(new IncomDataRealization("UA", "Java Rush Ltd", "John", "Doe", 38, 12345678));
+
+            Console.WriteLine(adaper.getCountryName());
+            Console.WriteLine(adaper.getCompanyName());
+            Console.WriteLine(adaper.getName());
+            Console.WriteLine(adaper.getPhoneNumber());
+
+            Console.ReadKey();
         }
 
         public class IncomeDataAdapter: Customer, Contact
         {
             IncomeData data;
+            public IncomeDataAdapter( IncomeData data)
+            {
+                this.data = data;
+            }
 
             public string getCompanyName()
             {
@@ -61,6 +72,51 @@ namespace AdapterPattern
             int getCountryPhoneCode();
             int getPhoneNumber();
         }
+
+        public class IncomDataRealization: IncomeData
+        {
+            string countryCode { get; set; }
+            string company { get; set; }
+            string contactFN { get; set; }
+            string contactLN { get; set; }
+            int countryPhoneCode { get; set; }
+            int phoneNumber { get; set; }
+
+            public IncomDataRealization(string countryCode, string company, string contactFN, string contactLN, int countryPhoneCode, int phoneNumber)
+            {
+                this.countryCode = countryCode;
+                this.company = company;
+                this.contactFN = contactFN;
+                this.contactLN = contactLN;
+                this.countryPhoneCode = countryPhoneCode;
+                this.phoneNumber = phoneNumber;
+            }
+
+            public string getCountryCode()
+            {
+                return countryCode;
+            }
+            public string getCompany()
+            {
+                return company;
+            }
+            public string getContactFirstName()
+            {
+                return contactFN;
+            }
+            public string getContactLastName()
+            {
+                return contactLN;
+            }
+            public int getCountryPhoneCode()
+            {
+                return countryPhoneCode;
+            }
+            public int getPhoneNumber()
+            {
+                return phoneNumber;
+            }
+
 
         public interface Customer
         {
